@@ -22,4 +22,4 @@ jobs:
       run: npm install
 
     - name: Run Cypress tests
-      run: npm cypress open  # Replace with your actual Cypress test command
+      run: npx cypress open  # Replace with your actual Cypress test command
