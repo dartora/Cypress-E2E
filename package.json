@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open",
-    "test2": "npx cypress open"
+    "test": "npx cypress open"
   },
   "author": "",
   "license": "ISC",
