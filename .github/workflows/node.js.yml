@@ -18,18 +18,19 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: 14  # Use your desired Node.js version
-
+        
+    - name: Install dependencies
+      run: npm install
+      
     - name: Cache Cypress binary
       uses: actions/cache@v2
       with:
         path: /home/runner/.cache/Cypress
         key: cypress-binary-${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
-
-    - name: Install dependencies
-      run: npm install
+  
 
     - name: Install Cypress
-      run: npx cypress install
+      run: npm cypress install
 
     - name: Run Cypress tests
       run: npm run test
