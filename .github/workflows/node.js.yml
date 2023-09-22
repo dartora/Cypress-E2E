@@ -20,4 +20,4 @@ jobs:
       run: npm install
 
     - name: Run Cypress tests
-      run: npx cypress open  # Replace with your actual Cypress test command
+      run: npx cypress run --spec "cypress/integration/1-getting-started/todo.spec.js"
